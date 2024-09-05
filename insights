@@ -1,0 +1,13 @@
+This was a very tough assignment as it had issues related to unable to fetch due to unrelated histories as well as wrong origin.
+
+I was unable to push the main branch from local repo to remote so I have to delete the local repo and perform the following commands
+
+git init
+git branch -M main
+<creating gitignore file via VS code to ignore ./vs folder>
+git add .
+git commit -m "<message>" 
+git remote -v
+git remote add origin <Github-repo-URL>
+git pull origin main --allow-unrelated-histories
+git push -u origin main
